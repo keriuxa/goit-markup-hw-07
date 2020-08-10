@@ -464,6 +464,7 @@ img {
   color: #ffffff;
   margin-top: 72px;
   margin-bottom: 20px;
+  display: block;
 }
 
 .social-links-footer {
@@ -519,6 +520,10 @@ img {
   color: #ffffff;
   font-weight: 400;
   font-size: medium;
+}
+
+.subscribe-imput::placeholder {
+  padding-left: 16px;
 }
 
 .subscribe-btn {
@@ -838,6 +843,7 @@ img {
   fill: var(--acent-color);
 }
 .modal-icon-svg {
+  display: block;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
