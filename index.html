@@ -505,18 +505,19 @@
           </ul>
         </section>
         <div class="subscribe-section">
-          <form action="#">
+          <form class="subscribe-form" action="#">
             <label for="Email-input" class="footer-title"
               >Подпишитесь на рассылку</label
             >
-
             <input
               id="Email-input"
               placeholder="E-mail"
               type="email"
               class="subscribe-imput"
             />
-            <button type="button" class="subscribe-btn">Подписаться</button>
+            <button type="button" class="subscribe-btn">
+              Подписаться
+            </button>
           </form>
         </div>
       </div>
@@ -525,23 +526,23 @@
     <div data-modal class="backdrop is-hidden">
       <form action="#" class="modal-window">
         <button data-modal-close type="button" class="modal-close-btn">
-          <svg class="icon-close" width="18" height="18">
+          <svg class="icon-close" width="11" height="11">
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
         </button>
         <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
         <div class="modal-imput-items">
           <input
-            type="name"
+            type="text"
             id="name"
             class="modal-form-input"
             placeholder=" "
             required
           />
-          <label for="name" class="modal-form-label">Имя</label>
           <svg class="modal-icon-svg" width="18" height="18">
             <use href="./images/sprite.svg#icon-person"></use>
           </svg>
+          <label for="name" class="modal-form-label">Имя</label>
         </div>
         <div class="modal-imput-items">
           <input
@@ -551,44 +552,58 @@
             placeholder=" "
             required
           />
-          <label for="tel" class="modal-form-label">Телефон</label>
           <svg class="modal-icon-svg" width="18" height="18">
             <use href="./images/sprite.svg#icon-phone"></use>
           </svg>
+
+          <label for="tel" class="modal-form-label">Телефон</label>
         </div>
         <div class="modal-imput-items">
           <input
-            type="mail"
+            type="email"
             id="email"
             class="modal-form-input"
             placeholder=" "
             required
           />
-          <label for="email" class="modal-form-label">Почта</label>
           <svg class="modal-icon-svg" width="18" height="18">
             <use href="./images/sprite.svg#icon-email"></use>
           </svg>
+
+          <label for="email" class="modal-form-label">Почта</label>
         </div>
-        <textarea
-          class="modal-massage"
-          name=""
-          id=""
-          cols="30"
-          rows="10"
-          placeholder="Комментарий"
-        ></textarea>
+        <div class="modal-imput-items">
+          <textarea
+            class="modal-massage"
+            name="modal-text"
+            id="modal-text"
+            cols="30"
+            rows="10"
+            placeholder=" "
+          ></textarea>
+          <label for="modal-text" class="modal-massage-label"
+            >Комментарий</label
+          >
+        </div>
 
         <label class="modal-checkbox-item">
           <input
             class="modal-form-checkbox"
             type="checkbox"
             name="Acept-polici"
+            required
           />
+          <span class="checkbox-svg-container">
+            <svg class="checkbox-svg" width="11" height="8">
+              <use href="./images/sprite.svg#icon-check"></use>
+            </svg>
+          </span>
           <span
             >Соглашаюсь с рассылкой и принимаю
             <a href="" class="">Условия договора</a></span
           >
         </label>
+
         <button type="submit" class="modal-btn">Отправить</button>
       </form>
     </div>
