@@ -1,0 +1,102 @@
+.header {
+  border: 1px solid #ececec;
+}
+.logo-studio {
+  font-family: Raleway;
+  font-weight: 700;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: $main-text-color;
+  margin-right: 85px;
+}
+.navigation .curent > a {
+  color: $acent-color;
+}
+.curent::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: $acent-color;
+  border-radius: 2px;
+  position: absolute;
+  bottom: 0px;
+}
+.logo-web {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.9;
+  color: $acent-color;
+}
+
+.header-items {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $main-text-color;
+  position: relative;
+}
+
+.header-items a {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.navigation-items .contacts {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  color: $secondary-text-color;
+}
+
+.header,
+.contacts .link {
+  color: $secondary-text-color;
+}
+
+.header a {
+  color: $main-text-color;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header a:hover,
+.header a:focus {
+  color: $acent-color;
+}
+
+.icon-header {
+  fill: currentColor;
+  display: inline-block;
+  align-items: center;
+  padding-right: 10px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-navigation {
+  display: flex;
+}
+
+.header-navigation .header-items:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts:not(:last-child) {
+  margin-right: 30px;
+}
