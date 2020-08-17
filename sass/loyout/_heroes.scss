@@ -2,13 +2,12 @@
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  /* text-align: center; */
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  /* padding-top: 200px; */
   margin-bottom: 30px;
 }
+
 .btn {
   background-color: $acent-color;
   color: white;
@@ -39,4 +38,6 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }

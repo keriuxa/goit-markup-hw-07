@@ -1,7 +1,7 @@
 body {
-  font-family: var(--main-font);
+  font-family: $main-font;
   font-size: 14px;
-  text-decoration-color: var(--main-text-color);
+  text-decoration-color: $main-text-color;
   background-color: white;
   list-style: none;
 }

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebStudio</title>
+    <title>Студия</title>
 
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@300;400;500;700;900&display=swap"
@@ -151,8 +151,8 @@
                 width="270"
                 height="260"
               />
-              <h3 class="teammates">Николай Кучеренко</h3>
-              <p lang="en" class="teammates-position">Product Designer</p>
+              <h3 class="teamattes">Николай Кучеренко</h3>
+              <p lang="en" class="teamattes-position">Product Designer</p>
               <ul class="list teamattes-social-links">
                 <li>
                   <a
@@ -210,8 +210,8 @@
                 width="270"
                 height="260"
               />
-              <h3 class="teammates">Ольга Иванова</h3>
-              <p lang="en" class="teammates-position">Frontend Developer</p>
+              <h3 class="teamattes">Ольга Иванова</h3>
+              <p lang="en" class="teamattes-position">Frontend Developer</p>
               <ul class="list teamattes-social-links">
                 <li>
                   <a
@@ -269,8 +269,8 @@
                 width="270"
                 height="260"
               />
-              <h3 class="teammates">Андрей Шевченко</h3>
-              <p lang="en" class="teammates-position">Marketing</p>
+              <h3 class="teamattes">Андрей Шевченко</h3>
+              <p lang="en" class="teamattes-position">Marketing</p>
               <ul class="list teamattes-social-links">
                 <li>
                   <a
@@ -328,8 +328,8 @@
                 width="270"
                 height="260"
               />
-              <h3 class="teammates">Иван Николаев</h3>
-              <p lang="en" class="teammates-position">UI Designer</p>
+              <h3 class="teamattes">Иван Николаев</h3>
+              <p lang="en" class="teamattes-position">UI Designer</p>
               <ul class="list teamattes-social-links">
                 <li>
                   <a
@@ -524,13 +524,15 @@
     </footer>
 
     <div data-modal class="backdrop is-hidden">
-      <form action="#" class="modal-window">
-        <button data-modal-close type="button" class="modal-close-btn">
-          <svg class="icon-close" width="11" height="11">
-            <use href="./images/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
-        <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+      <div class="modal-window">
+      <button data-modal-close type="button" class="modal-close-btn">
+        <svg class="icon-close" width="11" height="11">
+          <use href="./images/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <form action="#" >
+       <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
         <div class="modal-imput-items">
           <input
             type="text"
@@ -584,6 +586,7 @@
           <label for="modal-text" class="modal-massage-label"
             >Комментарий</label
           >
+         
         </div>
 
         <label class="modal-checkbox-item">
@@ -606,6 +609,7 @@
 
         <button type="submit" class="modal-btn">Отправить</button>
       </form>
+    </div>
     </div>
 
     <script src="./js/modal.js"></script>

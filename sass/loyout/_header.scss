@@ -1,8 +1,36 @@
-.header {
+.header
+ {
   border: 1px solid #ececec;
+  .contacts a
+    {
+    color: $secondary-text-color;
+    }
+
+  a {
+      color: $main-text-color;
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    a:hover, 
+    a:focus {
+  color: $acent-color;
+  }
 }
+        
+   
+
+.navigation {
+  display: flex;
+  align-items: center;
+  .curent > a {
+    color: $acent-color;
+  }
+}
+
 .logo-studio {
-  font-family: Raleway;
+  font-family: $secondary-font;
   font-weight: 700;
   font-weight: 700;
   font-size: 26px;
@@ -10,9 +38,7 @@
   color: $main-text-color;
   margin-right: 85px;
 }
-.navigation .curent > a {
-  color: $acent-color;
-}
+
 .curent::after {
   display: block;
   content: "";
@@ -24,7 +50,7 @@
   bottom: 0px;
 }
 .logo-web {
-  font-family: Raleway;
+  font-family:$secondary-font;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.9;
@@ -38,35 +64,19 @@
   letter-spacing: 0.02em;
   color: $main-text-color;
   position: relative;
+  a {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
-.header-items a {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
+
 .navigation-items .contacts {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4;
   letter-spacing: 0.02em;
   color: $secondary-text-color;
-}
-
-.header,
-.contacts .link {
-  color: $secondary-text-color;
-}
-
-.header a {
-  color: $main-text-color;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header a:hover,
-.header a:focus {
-  color: $acent-color;
 }
 
 .icon-header {
@@ -79,24 +89,27 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.navigation {
-  display: flex;
-  align-items: center;
-}
 
 .header-navigation {
   display: flex;
 }
 
-.header-navigation .header-items:not(:last-child) {
+.header-items:not(:last-child) {
   margin-right: 50px;
 }
 
 .contacts-list {
   display: flex;
   margin-left: auto;
+
+  >.contacts {
+    margin-right: 30px;
+  }
 }
 
-.contacts:not(:last-child) {
-  margin-right: 30px;
+.contacts:hover,
+.contacts:focus {
+  color: $acent-color;
 }
+
+

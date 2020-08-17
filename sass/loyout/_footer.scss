@@ -1,14 +1,46 @@
 .footer {
   background-color: #2f303a;
-}
-.footer-container {
-  display: flex;
-}
+  
+  &-container {
+    display: flex;
+  }
 
-.footer a:hover,
-.footer a:focus {
+   a:hover,
+   a:focus {
   color: $acent-color;
 }
+
+  &-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: 72px;
+    margin-bottom: 20px;
+    display: block;
+  }
+    &-social-list-item {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &-social-list-item:hover {
+    background-color: $acent-color;
+  }
+}
+
+
+
 .logo-footer {
   margin-top: 60px;
   margin-right: 147px;
@@ -17,12 +49,14 @@
 
 .adress-list li:not(:last-child) {
   margin-bottom: 9px;
+
+  
 }
 .adress-list li:last-child {
   margin-bottom: 60px;
 }
 .logo-web-footer {
-  font-family: Raleway;
+  font-family: $secondary-font;
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
@@ -31,7 +65,7 @@
 }
 
 .logo-studio-footer {
-  font-family: Raleway;
+  font-family: $secondary-font;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.9;
@@ -55,39 +89,39 @@
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
 }
-.footer-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
-  margin-top: 72px;
-  margin-bottom: 20px;
-  display: block;
-}
+// .footer-title {
+//   font-weight: 700;
+//   font-size: 14px;
+//   line-height: 1.2;
+//   letter-spacing: 0.03em;
+//   text-transform: uppercase;
+//   color: #ffffff;
+//   margin-top: 72px;
+//   margin-bottom: 20px;
+//   display: block;
+// }
 
 .social-links-footer {
   display: flex;
 }
 
-.footer-social-list-item {
-  display: inline-block;
-  width: 44px;
-  height: 44px;
-  background-color: rgba(255, 255, 255, 0.1);
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 50%;
-  margin-right: 10px;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+// .footer-social-list-item {
+//   display: inline-block;
+//   width: 44px;
+//   height: 44px;
+//   background-color: rgba(255, 255, 255, 0.1);
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   border-radius: 50%;
+//   margin-right: 10px;
+//   transition-property: background-color;
+//   transition-duration: 250ms;
+//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+// }
 
-.footer-social-list-item:hover {
-  background-color: $acent-color;
-}
+// .footer-social-list-item:hover {
+//   background-color: $acent-color;
+// }
 
 .footer-instagram-icon {
   background-image: url(../images/socialnetworks-icons-footer/instagram.svg);
@@ -120,11 +154,15 @@
   color: #ffffff;
   font-weight: 400;
   font-size: medium;
+
+  &::placeholder {
+    padding-left: 16px;
+  }
 }
 
-.subscribe-imput::placeholder {
-  padding-left: 16px;
-}
+// .subscribe-imput::placeholder {
+//   padding-left: 16px;
+// }
 
 .subscribe-btn {
   width: 200px;
@@ -140,14 +178,24 @@
   text-align: center;
   padding-right: 28px;
   padding-left: 29px;
+
+  &::after {
+    background-image: url(../images/socialnetworks-icons-footer/icon-send.svg);
+    content: "";
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    margin-left: 10px;
+    background-position: bottom;
+  }
 }
 
-.subscribe-btn::after {
-  background-image: url(../images/socialnetworks-icons-footer/icon-send.svg);
-  content: "";
-  width: 24px;
-  height: 24px;
-  display: inline-block;
-  margin-left: 10px;
-  background-position: bottom;
-}
+// .subscribe-btn::after {
+//   background-image: url(../images/socialnetworks-icons-footer/icon-send.svg);
+//   content: "";
+//   width: 24px;
+//   height: 24px;
+//   display: inline-block;
+//   margin-left: 10px;
+//   background-position: bottom;
+// }

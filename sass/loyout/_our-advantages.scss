@@ -1,14 +1,27 @@
-.advantages {
+.advantages { 
   display: flex;
-}
+  li::before {
+    content: "";
+    display: inline-block;
+    background-color: #f5f4fa;
+    height: 120px;
+    width: 100%;
+  }
+  li:not(:last-child) {
+  margin-right: 30px;
+  }
+   li {
+  width: 270px;
+  }
+  &-ikon {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #f5f4fa;
+    }
 
-.advantages li::before {
-  content: "";
-  display: inline-block;
-  background-color: #f5f4fa;
-  height: 120px;
-  width: 100%;
-}
+   }
 
 .antena::before {
   background-image: url(../images/icons/icon-antena.svg);
@@ -31,19 +44,6 @@
   background-image: url(../images/icons/icon-astronaut.svg);
   background-repeat: no-repeat;
   background-position: center;
-}
-.advantages li:not(:last-child) {
-  margin-right: 30px;
-}
-.advantages li {
-  width: 270px;
-}
-.advantages-ikon {
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  background-color: #f5f4fa;
 }
 
 .text {
